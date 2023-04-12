@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import { ShortcutsProvider } from "keyboard-shortcuts";
+
 import "./index.scss";
-import { ShortcutsProvider } from "./context/ShortcutsContext";
+import App from "./App";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>

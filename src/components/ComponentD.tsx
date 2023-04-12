@@ -1,4 +1,4 @@
-import { WithShortcuts } from "./WithShortcuts";
+import { WithShortcuts } from "keyboard-shortcuts";
 
 const ComponentD = () => {
   return (

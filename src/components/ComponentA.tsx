@@ -1,7 +1,7 @@
 import { useState } from "react";
+import { KeyboardShortcut } from "keyboard-shortcuts";
 
 import getRandomColor from "@/lib/getRandomColor";
-import { KeyboardShortcut } from "./KeyboardShortcut";
 
 const ComponentA = () => {
   const [boxStyle, setBoxStyle] = useState<React.CSSProperties>({

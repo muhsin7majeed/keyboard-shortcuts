@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 
-import keypressListener from "@/lib/keypress";
-import useShortcutsContext from "@/hooks/useShortcutsContext";
-import { Shortcut } from "@/context/ShortcutsContext";
+import { Shortcut } from "../context/ShortcutsContext";
+import { useShortcutsContext } from "../hooks/useShortcutsContext";
+import { keypressListener } from "../lib/keypress";
 
 type KeyboardShortcutProps = Shortcut & {};
 
-export function KeyboardShortcut({ combo, callback, description }: KeyboardShortcutProps) {
+export const KeyboardShortcut = ({ combo, callback, description }: KeyboardShortcutProps) => {
   const { addShortcut, removeShortcut } = useShortcutsContext();
 
   const shortcut = {
@@ -29,4 +29,4 @@ export function KeyboardShortcut({ combo, callback, description }: KeyboardShort
   }, [addShortcut, removeShortcut]);
 
   return null;
-}
+};

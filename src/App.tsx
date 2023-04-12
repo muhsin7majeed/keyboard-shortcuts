@@ -3,7 +3,7 @@ import ComponentB from "@/components/ComponentB";
 import ComponentC from "@/components/ComponentC";
 import ComponentD from "@/components/ComponentD";
 
-function App() {
+const App = () => {
   return (
     <>
       <div className="app__box__container">
@@ -14,6 +14,6 @@ function App() {
       </div>
     </>
   );
-}
+};
 
 export default App;

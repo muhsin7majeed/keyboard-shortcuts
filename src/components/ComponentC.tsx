@@ -1,6 +1,5 @@
 import { useState } from "react";
-
-import { KeyboardShortcut } from "./KeyboardShortcut";
+import { KeyboardShortcut } from "keyboard-shortcuts";
 
 const ComponentC = () => {
   const [boxStyle, setBoxStyle] = useState<React.CSSProperties>({

@@ -20,6 +20,6 @@
       "@/*": ["src/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "keyboard-shortcuts/src/components/KeyboardShortcut.tsx", "keyboard-shortcuts/src/components/WithShortcuts.tsx", "keyboard-shortcuts/src/context/ShortcutsContext.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
