@@ -1,13 +1,13 @@
-import { useEffect, useMemo } from "react";
+import { useEffect } from "react";
 
 import keypressListener from "@/lib/keypress";
 import useShortcutsContext from "@/hooks/useShortcutsContext";
 
-interface KeyboardShortcutProps {
+type KeyboardShortcutProps = {
   combo: string;
   callback: () => void;
   description: string;
-}
+};
 
 export function KeyboardShortcut({ combo, callback, description }: KeyboardShortcutProps) {
   const { addShortcut, removeShortcut } = useShortcutsContext();

@@ -1,16 +1,16 @@
 import { ReactElement, createContext, useCallback, useState } from "react";
 
-export interface Shortcut {
+export type Shortcut = {
   combo: string;
   callback: () => void;
   description: string;
-}
+};
 
-export interface ShortcutContextType {
+export type ShortcutContextType = {
   shortcuts: Shortcut[];
   addShortcut: (shortcut: Shortcut) => void;
   removeShortcut: (shortcut: Shortcut) => void;
-}
+};
 
 export const ShortcutsContext = createContext<ShortcutContextType>({
   shortcuts: [],
