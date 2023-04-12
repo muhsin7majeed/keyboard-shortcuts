@@ -2,7 +2,7 @@ import { ReactElement, createContext, useCallback, useState } from "react";
 
 export type Shortcut = {
   combo: string;
-  callback: () => void;
+  callback: (event?: KeyboardEvent | undefined, count?: number | undefined) => any;
   description: string;
 };
 
@@ -36,8 +36,6 @@ export const ShortcutsProvider = ({ children }: ShortcutsProviderPropTypes) => {
       )
     );
   }, []);
-
-  console.log(shortcuts);
 
   return (
     <ShortcutsContext.Provider

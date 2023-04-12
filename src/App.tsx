@@ -1,39 +1,18 @@
-import { KeyboardShortcut } from "@/components/KeyboardShortcut";
-import { WithShortcuts } from "@/components/WithShortcuts";
+import ComponentA from "@/components/ComponentA";
+import ComponentB from "@/components/ComponentB";
+import ComponentC from "@/components/ComponentC";
+import ComponentD from "@/components/ComponentD";
 
 function App() {
   return (
-    <div className="App">
-      <WithShortcuts>
-        {(shortcuts) => (
-          <ul>
-            {shortcuts.map((shortcut, i) => (
-              <li key={i}>
-                {shortcut.combo} - {shortcut.description}
-              </li>
-            ))}
-          </ul>
-        )}
-      </WithShortcuts>
-
-      <KeyboardShortcut
-        combo="ctrl a"
-        callback={() => console.log("ctrl+a")}
-        description="Changes background color of component A"
-      />
-
-      <KeyboardShortcut
-        combo="ctrl b"
-        callback={() => console.log("ctrl+b")}
-        description="Changes background color of component A"
-      />
-
-      <KeyboardShortcut
-        combo="ctrl c"
-        callback={() => console.log("ctrl+c")}
-        description="Changes background color of component A"
-      />
-    </div>
+    <>
+      <div className="app__box__container">
+        <ComponentA />
+        <ComponentB />
+        <ComponentC />
+        <ComponentD />
+      </div>
+    </>
   );
 }
 
