@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 
-import { Shortcut } from "../context/ShortcutsContext";
-import { useShortcutsContext } from "../hooks/useShortcutsContext";
-import { keypressListener } from "../lib/keypress";
+import { Shortcut } from "@/context/ShortcutsContext";
+import { useShortcutsContext } from "@/hooks/useShortcutsContext";
+import { keypressListener } from "@/lib/keypress";
 
 type KeyboardShortcutProps = Shortcut & {};
 
